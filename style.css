@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:ital,wght@1,300&display=swap');
+* {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    overflow: hidden;
+}
+
+body {
+    background: rgb(4, 4, 4);
+    background: linear-gradient(90deg, rgb(7, 7, 7) 0%, rgba(255, 0, 0) 100%);
+}
+
+img {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1% 1%;
+    border-radius: 20px;
+}
+
+.txt {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.txt h1 {
+    font-size: 75px;
+    width: 100%;
+}
+
+.cnt a {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: .5% 1%;
+    border-radius: 20px;
+    transition-duration: .25s;
+}
+
+.cnt a:hover {
+    font-weight: 1000;
+    padding: .5% 2%;
+}
+
+@media only screen and (max-width:480px) {
+    img {
+        padding: 1% 1%;
+        border-radius: 20px;
+        top: 10%;
+        left: 10%;
+    }
+    .txt h1 {
+        font-size: 30px;
+    }
+    .txt h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:ital,wght@1,300&display=swap');
+* {
+    font-weight: 20;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+body {
+    background: rgb(10, 10, 10);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(255, 0, 0, 1) 100%);
+}
+
+.logo img {
+    background-color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 5%;
+    border-radius: 20px;
+    padding: 15px 15px;
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 305px black;
+    width: 75px;
+}
+
+.heading h1 {
+    color: white;
+    background: linear-gradient(270deg, rgb(7, 7, 7) 0%, rgba(255, 0, 0, 1) 100%);
+    font-weight: 900;
+    position: fixed;
+    top: 10%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    padding: 1vh 1vh;
+    border-radius: 10px;
+    text-shadow: 0 0 10vh rgb(255, 255, 255);
+    box-shadow: 0 0 200vh rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.imgs img {
+    border-style: ridge;
+    border-color: greenyellow;
+    border-width: 5px;
+    border-radius: 50px;
+    width: 50%;
+    animation-duration: 1s;
+    animation: imgs 3s;
+}
+
+@keyframes imgs {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.txt p {
+    font-weight: 1000;
+}
+
+.idnt {
+    line-height: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+.idnt img {
+    text-align: center;
+    border: none;
+    size: 10px;
+    width: 5%;
+    vertical-align: middle;
+}
+
+.idnt a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width:480px) {
+    .imgs img {
+        width: 80%;
+    }
+    .logo {
+        top: 10%;
+    }
+    .logo img {
+        padding: 5px 5px;
+        top: 5%;
+        left: 5%;
+        width: 5%;
+    }
+    .proof {
+        font-size: 10px;
+    }
+    .proof a img {
+        width: 20px;
+    }
+    .idnt {
+        line-height: 50px;
+    }
+}
